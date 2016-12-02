@@ -1,3 +1,4 @@
 <?php
-echo "Demo";
+header("location:login/");
+exit();
 ?>
