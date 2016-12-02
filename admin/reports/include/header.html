@@ -3,7 +3,7 @@
 						
 
 													<ul class="sidebar-menu ScrollStyle" >
-													  <li class="header sidemenu-title_img text-center" >SREE LAKSHMI HOSPITAL</li>
+													  <li class="header sidemenu-title_img text-center" >SREE LAXSHMI HOSPITAL</li>
 													  
 													  <li class="treeview">
 														<a href="../roles/index.php">
@@ -60,16 +60,19 @@
 														 
 														</ul>-->
 													  </li>
-
-													  
-												<li class="treeview">
-														<a href="../reports/index.php">
+													     <li class="treeview">
+														<a href="#">
 															 <img  class="icon-gap" src="../../icons/sidemenu/menu4.png"></img> <span class="title-gap">Reports</span> <img src="../../icons/sidemenu/pull-down.png" class="pull-right adjust-pulldown"></i>
 														</a>
+														<ul class="treeview-menu">
+														  <li><a href="#" id="op_patient" ng-click="get_op_report()"><i class="fa fa-circle-o"></i> Op Patient</a></li>
+														  <li><a href="#"  id="ip_patient" ng-click="get_ip_report()"><i class="fa fa-circle-o"></i>IP Patient</a></li>
+														  <li><a href="#" id="testreports" ng-click="get_tests_report()"><i class="fa fa-circle-o"></i>Tests Report</a></li>
+														  <li><a href="#" id="packagereports" ng-click="get_package_report()"><i class="fa fa-circle-o"></i>Packages Report</a></li>
 														
-											   </li>
-											   	  
-												<li class="treeview">
+														</ul>
+													  </li>
+													  <li class="treeview">
 														<a href="../edit_bill/index.php">
 															 <img  class="icon-gap" src="../../icons/sidemenu/menu4.png"></img> <span class="title-gap">Edit Bill</span> <img src="../../icons/sidemenu/pull-down.png" class="pull-right adjust-pulldown"></i>
 														</a>

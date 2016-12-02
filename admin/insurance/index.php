@@ -72,7 +72,7 @@ else{
 			
 	<div class="col-md-4 col-lg-4 col-xs-4 col-sm-4  insurance-tab tab-shadow tab-gap" ng-repeat="insurance in display_insurance | filter:serachbox" >
  
-		<div class="insu-tab-header row font-lato-18-reg adjust-spaces " >
+		<div class=" row font-lato-18-reg adjust-spaces " >
  
  
 				<div class="col-md-9 col-xs-9 col-lg-9 col-sm-9" style="padding: 0px 0px 0px 7px;">
@@ -80,30 +80,14 @@ else{
 				</div>
 				 <div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 adjust-edit-delete" >
 					 <div>
-							  <a href="" style="padding: 6%;" ><img  src="../../icons/roles/edit.png"data-toggle = "modal" data-target = "#edit_insurance" ng-click="insurance_edit(insurance.insurance_id)"></span></a>
+							 
 							   <a href="" ng-click="insurance_delete(insurance.insurance_id)"><img  src="../../icons/roles/delete.png"></span></a>
 								
 						</div>
 				  </div>
 				
 		
-			<table class="doct-row-space row font-14 dept-table">
-											
-						<tr class=" " id="d_head">
-						   <td class="bold" width="40%">Email ID:</td><td>{{insurance.email}}</td>
-						</tr>	
-							
-						<tr class=" " id="d_head">
-						   <td class="bold">Addrress:</td><td>{{insurance.address}},{{insurance.city}}, {{insurance.state}},{{insurance.country}}</td>
-						</tr>
-						<tr class=" " id="d_head">
-						   <td class="bold">Phone No:</td><td>{{insurance.phone}}</td>
-						</tr>
-						
-						<tr id="mailalias">
-						   <td class="bold">Fax :</td><td>{{insurance.fax}}</td>
-						</tr>	
-           </table>	
+			
 	
  	</div>
  

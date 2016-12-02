@@ -334,23 +334,20 @@ else{
 			  
 			  </div>
 			</div>
-			 	<div class="form-group adjust-loc-inputs font-12">
-								  <label class="control-label col-sm-3 col-lg-3 col-xs-12 col-md-3 adjust-label" for="name" style="margin-left: -1em;margin-top: -2%;">Select Category</label>
-								  <div class=" col-sm-8 col-lg-8 col-xs-12 col-md-8 float-left-inputs">
-								  
-								  
-												  <select class="form-control drop-down-btn loc-input-size dropdown_category" id="country" name="country" ng-model="category.test_cat_id" ng-change="test_display()" >
-													<option  value=""selected="selected">Select Category</option>
-													<option name="" ng-repeat="category in test_category_details" value="{{category.test_cat_id}}">{{category.category_name}}</option>
-													
-												  </select>
-									 
-								  </div>
-										  <div class=" col-sm-1 col-lg-1 col-xs-12 col-md-1">
-										  
-										  </div>
-					 </div>		
-	<div class="form-group align-input-space font-lato-12-bold" ng-show="show_test">
+			
+			  <div class="form-group align-input-space font-lato-12-bold">
+			  <label class="control-label col-sm-3 col-lg-3 col-xs-12 col-md-3 align-label" style="padding-top: 0px; margin-left: -9em;margin-top: 1%;" for="name"></label>
+			  <div class=" col-sm-8 col-lg-8 col-xs-12 col-md-8" style="height: 100%;">
+			     
+    
+				<input type="text" class="form-control  align-input-ele font-lato-12-bold input-icon" id="name" ng-model="search_test_name" placeholder="Search test here">
+			  </div>
+			  <div class=" col-sm-1 col-lg-1 col-xs-12 col-md-1">
+			  
+			  </div>
+			</div>
+				
+	<div class="form-group align-input-space font-lato-12-bold test-block" ng-show="show_test">
 	         <label class="control-label col-sm-3 col-lg-3 col-xs-12 col-md-3 align-label" style="margin-left: -9em!important;"for="name">select test</label>
              <div class=" col-sm-9 col-lg-9 col-xs-12 col-md-9" style="height: 100%;text-align:left;width: 88%;"  >
 			 
@@ -358,8 +355,8 @@ else{
 			 
 			 
 			 
-			   <div class=" col-sm-3 col-lg-3 col-xs-12 col-md-3" ng-repeat="name in display_test_category" >
-				<input type="checkbox" ng-model="name.checked" ng-click="addCheck(name)">{{name.test_name}}
+			   <div class=" col-sm-3 col-lg-3 col-xs-3 col-md-3 adjust-tests" ng-repeat="name in display_test_category | filter:search_test_name" >
+				<input type="checkbox" class="check-title-gap" ng-model="name.checked" ng-click="addCheck(name)">{{name.test_name}}
 				</div>
 	
 			  </div>

@@ -4,7 +4,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 $user_id=$data->user_id;
 $phone=$data->phone;
-$type=$data->role;
+$type=$data->type;
 
 if($type=="Reciptionist")
 {
